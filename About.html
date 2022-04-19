@@ -18,8 +18,55 @@
   <a href="Order.html">Order</a>
   </div>
 </div>
+<div class="FrontBanner-about">
+  <div class="BannerText">
+    <h1>About Us</h1>
+  </div>
+</div>
+
+<div class="text">
+  <q >I've been making food scince I was little one and want to bring my love of food to others.</q>
+  <br> <cite>-Ceo. Pete</cite>
+</div>
 
 
+<div class="Content">
+  <div class="content-text">
+    <h3>History of Frog</h3>
+    <p>We started as a small family bakery in wicklow and first did catering for our friends wedding from there we've expanded to include multiple kitchens and staff to help deliver the best expeirence possible
+    </p>
+  </div>
+  <div class="image">
+    <img src="HomePage-img/about1-upsplash.jpg" alt="About1">
+  </div>
+  <div class="image">
+    <img src="HomePage-img/about2-upsplash.jpg" alt="About2">
+  </div>
+
+  <div class="content-text">
+    <h3>Why Frog </h3>
+    <h4>Looking out for you</h4>
+    <p>We go to great lengths to assure the best in quality product and staff and scource most of our products locally or from trusted producers abroad.
+
+  </div>
+</div>
+<div class="LargeText">
+  <u>Gallery</u>
+</div>
+<div class="full-img" id="fullImgBox">
+ <img src="images/img1.jpg" id="fullImg">
+ <span onclick="closeImg()">X</span>
+</div>
+<div class="gallery">
+  <img src="HomePage-img/gallery1-small-unsplash.jpg" alt="HomePage-img/gallery1-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery2-small-unsplash.jpg" alt="HomePage-img/gallery2-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery3-small-unsplash.jpg" alt="HomePage-img/gallery3-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery4-small-unsplash.jpg" alt="HomePage-img/gallery4-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery5-small-unsplash.jpg" alt="HomePage-img/gallery5-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery6-small-unsplash.jpg" alt="HomePage-img/gallery6-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery7-small-unsplash.jpg" alt="HomePage-img/gallery7-unsplash.jpg" onclick="openImg(this.alt)">
+  <img src="HomePage-img/gallery8-small-unsplash.jpg" alt="HomePage-img/gallery8-unsplash.jpg" onclick="openImg(this.alt)">
+</div>
 <div class="footer-container">
   <div class="footer">
     <div class="footer-heading footer-1">
@@ -40,5 +87,17 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+
+  function openImg(pic){
+    fullImgBox.style.display ="flex";
+    fullImg.src= pic;
+  }
+  function closeImg(){
+    fullImgBox.style.display ="none";
+  }
+</script>
 </body>
 </html>

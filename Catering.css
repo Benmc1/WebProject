@@ -84,12 +84,76 @@
   position: relative;
 
 }
+.FrontBanner-about {
+  background-image: url("HomePage-img/about-upsplash.jpg");
+  background-color: white;
+  height: 430px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.LargeText{
+    text-align: center;
+    font-size: 60px;
+}
 .text{
   text-align: center;
   font-size: 20px;
   padding: 20px;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+.gallery {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.gallery img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery img:hover{
+  transition: .3s;
+  transform: scale(0.85) ;
+  border-radius: 28px;
+  background: #8f8f8f;
+  box-shadow:  28px 28px 56px #d9d9d9,
+             -28px -28px 56px #ffffff;
+}
+
+.full-img{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top:0;
+  left:0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.full-img img{
+  width: 90%;
+  height: auto;
+  max-width: 1400px;
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 .Content{
   background-color: #FFFFFF;
